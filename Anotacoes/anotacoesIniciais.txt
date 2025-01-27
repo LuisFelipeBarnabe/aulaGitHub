@@ -10,15 +10,25 @@ GitHub -> Serfico social de hospedagem de projetos
 
 -> git init
 -- o git init cria um repositorio de acordo com a pasta em que esteja 
-ou seja, essa pasta ainda n é versionada pelo git, assim, com esse comando, voce torna ela em um repositorio e diz que vai ser versionada pelo git
+ou seja, essa pasta ainda n é versionada pelo git, assim, com esse comando, voce torna ela em um repositorio e 
+diz que vai ser versionada pelo git
 
 -> git add .
+-- com esse commando voce diz que quer add todos os arquivos para o commit 
+
+-> git status
+-- esse cara mostra os arquivos que serão commitados, aqueles que voce colocou no git add . 
 
 -> git commit -m "Sua mensagem de commit"
+-- ele cria uma nova versao no git jogando as alterações selecionadas nos comandos anteriores
 
 -> git branch -M main
+-- ele pega a branch e nomeia ela para main
 
 -> git remote add origin git@github.com:seuusuario/seurepositorio.git
+-- Esse comando serve para adicionar um repositório remoto ao seu repositório local. 
+Ele vincula o seu repositório local ao repositório remoto hospedado no GitHub
 
 -> git push -u origin main
-
+-- por fim esse comando manda eu jogar o que ta main para a origin que e a associação do repositorio remoto
+Basicamente mandando a nova versão para o github
