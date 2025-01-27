@@ -1,0 +1,24 @@
+== Diferenca de Git e GitHub ==
+
+Git -> Sistema de versionamento, controlar versões como exemplo as Branchs
+
+GitHub -> Serfico social de hospedagem de projetos
+
+
+
+==>> Comandos principais
+
+-> git init
+-- o git init cria um repositorio de acordo com a pasta em que esteja 
+ou seja, essa pasta ainda n é versionada pelo git, assim, com esse comando, voce torna ela em um repositorio e diz que vai ser versionada pelo git
+
+-> git add .
+
+-> git commit -m "Sua mensagem de commit"
+
+-> git branch -M main
+
+-> git remote add origin git@github.com:seuusuario/seurepositorio.git
+
+-> git push -u origin main
+
