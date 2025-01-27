@@ -32,3 +32,9 @@ Ele vincula o seu repositório local ao repositório remoto hospedado no GitHub
 -> git push -u origin main
 -- por fim esse comando manda eu jogar o que ta main para a origin que e a associação do repositorio remoto
 Basicamente mandando a nova versão para o github
+Isso quando for a primeira vez que for dar o git push 
+Nas outras vezes apenas um git push basta 
+
+
+-> git clone git@github.com:seuusuario/seurepositorio.git
+-- serve para clonar um repositorio remoto para sua maquina local 
