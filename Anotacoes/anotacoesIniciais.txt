@@ -70,3 +70,10 @@ Mostrando inclusive o autor do commit ´-´ -> para sair deve digitar a tecla 'q
 -> git checkout 
 -- mais utilizado para navegar entre branchs, porem pode ser usado para navegar entre commits 
 Cada commit possui um codigo 
+se voce der um 'git checkout -codigo do commit-
+voce pode navegar entre commits e ver antes das alterações e afins ... assim para voltar apenas basta 
+'git checkout main' -> main é a sua branch que esta trabalhando
+voce pode navegar entre os commits usando o HEAD, ficaria mais ou menos assim: 
+git checkout HEAD~1 -> esse codigo diz para pegar o primeiro commit abaixo do head, visto no log, ou seja, o penultimo e assim pode ir descendo
+git checkout HEAD~3 e assim vai
+voltar é a mesma coisa 
