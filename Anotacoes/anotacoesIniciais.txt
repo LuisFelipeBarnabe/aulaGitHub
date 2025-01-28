@@ -64,4 +64,9 @@ Mostrando inclusive o autor do commit ´-´ -> para sair deve digitar a tecla 'q
 
  -> git diff
  -- comando que mostra a diferenca entre arquivos modificados
- 
+ da para ver as diferencas entre o remoto e local de um unico arquivo tb, fazendo o seguinte 
+ -- git diff seuArquivo.html
+
+-> git checkout 
+-- mais utilizado para navegar entre branchs, porem pode ser usado para navegar entre commits 
+Cada commit possui um codigo 
