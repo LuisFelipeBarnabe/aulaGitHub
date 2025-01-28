@@ -15,9 +15,18 @@ diz que vai ser versionada pelo git
 
 -> git add .
 -- com esse commando voce diz que quer add todos os arquivos para o commit 
+esse comando joga as alterações em um estado de stage, que quando voce commita, ele commita apenas oq esta em stage 
+
+-> git reset
+-- ele tira tudo que colocasse na area de stage, sendo necessario add novamente para commitar
 
 -> git status
 -- esse cara mostra os arquivos que serão commitados, aqueles que voce colocou no git add . 
+o que fica em vermelho, é o que ainda n foi add em stage, o que fica em verde, é o que ja foi add
+-tem 3 casos 
+-modified -> modificado
+-deleted -> deletado
+-untracked -> novo arquivo
 
 -> git commit -m "Sua mensagem de commit"
 -- ele cria uma nova versao no git jogando as alterações selecionadas nos comandos anteriores
@@ -40,3 +49,19 @@ Nas outras vezes apenas um git push basta
 
 -> code .
 -- serve para abrir o vs code dentro do terminal do git, mas ja deve estar na pasta do projeto
+
+-> git log 
+-- da para ver o log de todos os commit do projeto, ainda informando ate que ponto esta no repositorio remoto 
+Mostrando inclusive o autor do commit ´-´ -> para sair deve digitar a tecla 'q'
+
+-> git log --oneline
+-- tambem mostra o log, porem de uma maneira mais resumida, mostrando apenas o comentario e o codigo do commit 
+ (HEAD -> main, origin/main, origin/HEAD) -> o commit que tiver essa linha siginifica que ate ali esta alinhado com o repositorio remoto, se tiver algo acima 
+ significa que tem mudanças para subir 
+
+ -> clear
+ -- auto explicativo -> limpa o lixo da tela do git bash
+
+ -> git diff
+ -- comando que mostra a diferenca entre arquivos modificados
+ 
