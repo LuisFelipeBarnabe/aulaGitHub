@@ -3,5 +3,18 @@
 - git reset -> faz um unstaged 
 
 => desfazer modificações nao salvas 
+-para eu conseguir reverter todas as modificações, voltando o projeto para o estado inicial do ultimo commit é fácil
+- git reset
+-git clean -df => remove arquivos não rastreados no seu diretório de trabalho
+-git checkout -- . => Esse comando serve para descartar mudanças locais em arquivos que foram modificados (mas não estão no stage). 
+Ele faz com que o diretório de trabalho volte ao estado do último commit. 
 
+=> as vezes, quando voce por exemplo commitar sem o -m e comentario, ele pode te jogar para um editor VIM, que para sair existem duas formas
+-clicando em 'i', ele permite escrever o comentario do commit, clicar em 'esc' faz com que salve o comentario e digitando ':wq' salva seu commit e sair
+-se voce n quer dar o commit, nem salvar nada, basta dar um 'esc' por garantia e digitar :q!
+
+=> para desfazer o ultimo commit 
+digamos que voce fez um commit em um projeto grande e faltou uma pequena alteração em um arquivo, e não quer criar uma versão nova atraves do commit 
+apenas para isso ... voce pode fazer da seguinte forma, que, revertera o commit mantendo as alterações que fizesse 
+git reset --soft HEAD~1
 
