@@ -17,4 +17,12 @@ Ele faz com que o diretório de trabalho volte ao estado do último commit.
 digamos que voce fez um commit em um projeto grande e faltou uma pequena alteração em um arquivo, e não quer criar uma versão nova atraves do commit 
 apenas para isso ... voce pode fazer da seguinte forma, que, revertera o commit mantendo as alterações que fizesse 
 git reset --soft HEAD~1
+o --soft serve para manter as alterações 
 
+=> revertendo o commit deletando tudo que foi feito
+Digamos que voce tenha feito um commit mas deu merda e tu tem que reverter tudo que fizesse, e o commit tambem 
+"Atenção! Destrutivo!"
+para isso usamos o:
+git reset --hard CodigoDoSeuCommit
+ou
+git reset --hard HEAD~1 -> para o ultimo commit 
