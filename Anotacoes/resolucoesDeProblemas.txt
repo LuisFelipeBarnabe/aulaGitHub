@@ -1,0 +1,7 @@
+=> Primeiro problema é remover arquivo da area de stage 
+- git status 
+- git reset -> faz um unstaged 
+
+=> desfazer modificações nao salvas 
+
+

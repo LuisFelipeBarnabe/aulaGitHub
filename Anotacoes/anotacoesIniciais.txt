@@ -77,3 +77,15 @@ voce pode navegar entre os commits usando o HEAD, ficaria mais ou menos assim:
 git checkout HEAD~1 -> esse codigo diz para pegar o primeiro commit abaixo do head, visto no log, ou seja, o penultimo e assim pode ir descendo
 git checkout HEAD~3 e assim vai
 voltar é a mesma coisa 
+Certifique-se de que não tenha feito nenhuma mudança nos commits anteriores antes de voltar 
+Boas práticas, para ter tal certeza, faça os seguintes passos 
+-git reset -> limpa tudo que estava em stage, mas mantem as mudanças, apenas limpa o stage
+-git clean -df -> remove arquivos não rastreados do projeto, util para excluir arquivos temporarios ou gerados automaticamente 
+-git checkout -- . -> serve para limpar modificações, descartar as modificações locais. O -- especifica que você deseja afetar os arquivos no diretório atual (e o ponto . representa o diretório atual e seus subdiretórios).
+
+
+.gitignore ->  arquivo que indica o que não deve ser salvo pelo git, como exemplo:
+- arquivos compilados
+- arquivos de bibliotecas externas 
+- arquivos de configuracao da ide
+- arquivos de configuração do sistema
