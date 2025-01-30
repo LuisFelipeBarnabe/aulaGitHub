@@ -23,6 +23,7 @@ o --soft serve para manter as alterações
 Digamos que voce tenha feito um commit mas deu merda e tu tem que reverter tudo que fizesse, e o commit tambem 
 "Atenção! Destrutivo!"v -> apaga o commit e suas respectivas alterações
 para isso usamos o:
-git reset --hard CodigoDoSeuCommit
+git reset --hard CodigoDoSeuCommit -> não pode ser o codigo do commit atual, sendo assim use o outro
+quando selecionado o codigo do commit, ele vai apagar tudo depois dele, mantendo que voce selecionou 
 ou
 git reset --hard HEAD~1 -> para o ultimo commit 
