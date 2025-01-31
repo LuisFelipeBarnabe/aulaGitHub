@@ -27,3 +27,7 @@ git reset --hard CodigoDoSeuCommit -> não pode ser o codigo do commit atual, se
 quando selecionado o codigo do commit, ele vai apagar tudo depois dele, mantendo que voce selecionou 
 ou
 git reset --hard HEAD~1 -> para o ultimo commit 
+
+=> puxar as atualizações do repositório para minha maquina local
+-git pull repositorioRemoto repositorioLocal
+  
