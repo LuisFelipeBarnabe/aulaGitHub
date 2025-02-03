@@ -89,3 +89,14 @@ Boas práticas, para ter tal certeza, faça os seguintes passos
 - arquivos de bibliotecas externas 
 - arquivos de configuracao da ide
 - arquivos de configuração do sistema
+
+-jogar o codigo doprojeto para outro repositorio remoto
+para isso, mudamos o origin que é a representação do projeto, para criar ele, usamos o:
+git remote add origin git@github.com:seuusuario/seurepositorio.git
+Mas ao menos que o nome possa ser outro, teremos que mudar, atualizando a url do origin
+é só mudar o add por set-url
+git remote set-url origin git@github.com:seuusuario/seunovorepositorio.git
+Assim, como mudou o repositorio, no seu primeiro push, tem q repetir como se fosse a primeira vez
+git push -u origin main
+pronto, agora esta apontando para outro repositorio remoto e foi com tudo, todo o codigo e commits :)
+é isso!
